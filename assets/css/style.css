@@ -44,12 +44,58 @@ a {
 
 .common-btn {
     background-color: #1d4ed8;
-    padding: 14px 42px;
+    padding: 12px 42px;
     color: #fff;
     font-weight: 700;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
 }
 .common-btn:hover {
     background-color: #3071fc;
+}
+
+/* Banner Styles */
+
+.banner-area {
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 70%),
+        linear-gradient(-52deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.88) 87%),
+        url("../img/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 786px;
+    color: #fff;
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.banner-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-top h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -3px;
+}
+.banner-top p {
+    width: 58%;
+    text-align: center;
+    font-size: 22px;
+}
+.banner-btn .common-btn {
+    font-size: 24px;
+    padding: 25px 65px;
 }
