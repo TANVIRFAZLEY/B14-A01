@@ -14,6 +14,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+img {
+    max-width: 100%;
+}
 .container {
     width: 1320px;
     margin: auto;
@@ -98,4 +101,58 @@ a {
 .banner-btn .common-btn {
     font-size: 24px;
     padding: 25px 65px;
+}
+
+/* Speakers Area */
+.speakers-area {
+    padding: 80px 0;
+}
+.speakers-area h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000102;
+}
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.speaker-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.speaker-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.speaker-info {
+    padding: 24px;
+    display: grid;
+    gap: 8px;
+}
+.speaker-info h6 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #2563eb;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+.speaker-info h3 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #0d1b2a;
+}
+.speaker-info p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.speaker-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
