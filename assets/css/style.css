@@ -105,7 +105,8 @@ img {
 
 /* Speakers Area */
 .speakers-area,
-.pricing-area {
+.pricing-area,
+.venue-area {
     padding: 80px 0;
 }
 .section-title {
@@ -283,4 +284,150 @@ img {
     padding-top: 20px;
     text-align: center;
     color: #fff;
+}
+
+/* Venue Area */
+.venue-area {
+    background-color: #f3f4f6;
+}
+.venue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.venue-image {
+    position: relative;
+    display: flex;
+}
+.venue-image img {
+    border-radius: 12px;
+    display: block;
+}
+.venue-card {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.9);
+    color: #fff;
+    padding: 22px 25px;
+    border-radius: 18px;
+}
+.venue-card .icon {
+    width: 55px;
+    height: 55px;
+    background: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.venue-card small {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.venue-card h3 {
+    margin: 5px 0;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.facility {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.facility:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.facility i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.facility h4 {
+    margin-bottom: 10px;
+}
+
+.facility p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.map-box {
+    overflow: hidden;
+    border-radius: 12px;
+    height: 350px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.hotel-box {
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.hotel-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hotel-icon {
+    width: 70px;
+    height: 70px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+.outline-btn.common-btn:hover {
+    background: #2563eb;
+    color: #fff;
+    border: 1px solid #2563eb;
 }
