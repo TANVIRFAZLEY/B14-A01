@@ -282,8 +282,20 @@ img {
 }
 .footer-bottom {
     padding-top: 20px;
-    text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom-right ul a {
+    transition: all 0.3s ease-in-out;
+}
+.footer-bottom-right ul a:hover {
+    color: #2563eb;
 }
 
 /* Venue Area */
